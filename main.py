@@ -113,10 +113,8 @@ while no != 6:
     all_grey += grey
     all_grey = list(set(all_grey))
     all_grey_cache = []
-    A = [i for i in all_grey if i not in correct and i not in yellow_all]
-
+    all_grey_cache = [i for i in all_grey if i not in correct and i not in yellow_all]
     all_grey = all_grey_cache
-    list1 = guesses
     try:
         enter_text('a')
         driver.find_element(By.XPATH, '//*[text()= "⌫"]').click()

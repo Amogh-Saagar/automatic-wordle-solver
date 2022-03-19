@@ -23,7 +23,7 @@ run = True
 text = 'guest'
 
 #initializing webdriver
-driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+driver = webdriver.Chrome('/home/amogh/Downloads/chromedriver_linux64/chromedriver')
 driver.get('https://www.wordleunlimited.com/')
 time.sleep(1)
 
